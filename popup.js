@@ -416,7 +416,7 @@ function toggleMagicMenu() {
             resultBox.innerHTML = "Thinking... 🧠";
 
             // !!! PASTE YOUR KEY HERE !!!
-            const apiKey = "AIzaSyBd6dZU5wP17HHR35yQSbZdBaeuGweTuUY"; 
+            const apiKey = "YOUR_API_KEY_HERE"; 
             const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
 
             try {
