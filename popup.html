@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Lexo-Alpha</title>
+  <style>
+    body { width: 250px; padding: 15px; font-family: Arial, sans-serif; background-color: #f8aeb0; color: #333; }
+    h3 { margin-top: 0; text-align: center; }
+    
+    button {
+      width: 100%; padding: 10px; background-color: #c56e56; color: rgb(28, 22, 22);
+      border: none; border-radius: 5px; cursor: pointer; font-weight: bold;
+      box-shadow: 0px 3px 6px rgba(0,0,0,0.3); margin-top: 5px;
+    }
+    button:hover { background-color: #707080; color: white; }
+    
+    /* The style for our Accordion Headers */
+    .menu-header {
+      background-color: #a6523d; color: rgb(255, 255, 255); padding: 14px; font-size: 14px;
+      border-radius: 6px; text-align: center; font-weight: bold; cursor: pointer; 
+      margin-top: 10px; box-shadow: 0px 3px 6px rgba(0,0,0,0.3); transition: background-color 0.3s ease;
+    }
+    .menu-header:hover { background-color: #707080; color: white; }
+  </style>
+</head>
+<body>
+
+  <h3>Lexo-Alpha</h3>
+  <p style="font-size: 13px; text-align: center;">Reading Assistant</p>
+  
+  <div class="menu-header" id="toggles-header">Visual Tools &#9662;</div>
+  <div id="toggles-container" style="display: none; flex-direction: column; gap: 8px;">
+    <button id="apply-btn">Enable Dyslexia Mode</button> 
+    <button id="bionicToggle">Enable Bionic Reading</button>
+    <button id="rulerToggle">Enable Reading Ruler</button>
+    <button id="hoverHearToggle">Enable Hover to Hear</button>
+  </div>
+
+  <div class="menu-header" id="magic-header">AI Magic Menu &#9662;</div>
+  <div id="magic-container" style="display: none; flex-direction: column; gap: 8px;">
+    <button id="magicToggle">Enable AI Highlighter</button> 
+  </div>
+  
+  <script src="popup.js"></script>
+
+</body>
+</html>

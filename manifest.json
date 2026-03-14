@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Lexo-Alpha",
+  "version": "1.0",
+  "description": "An AI-powered reading assistant to make web text dyslexia-friendly.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["OpenDyslexic-Regular.otf"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
